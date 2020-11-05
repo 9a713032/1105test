@@ -33,7 +33,7 @@
             this.pic3 = new System.Windows.Forms.PictureBox();
             this.pic4 = new System.Windows.Forms.PictureBox();
             this.btn = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tbPlate = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic3)).BeginInit();
@@ -42,7 +42,6 @@
             // 
             // pic1
             // 
-            this.pic1.Image = global::_20201105.Properties.Resources._1;
             this.pic1.Location = new System.Drawing.Point(61, 175);
             this.pic1.Name = "pic1";
             this.pic1.Size = new System.Drawing.Size(200, 200);
@@ -86,21 +85,22 @@
             this.btn.TabIndex = 4;
             this.btn.Text = "查詢";
             this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
-            // richTextBox1
+            // tbPlate
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(61, 66);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(200, 96);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.tbPlate.Location = new System.Drawing.Point(61, 66);
+            this.tbPlate.Name = "tbPlate";
+            this.tbPlate.Size = new System.Drawing.Size(200, 96);
+            this.tbPlate.TabIndex = 5;
+            this.tbPlate.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 632);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.tbPlate);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.pic4);
             this.Controls.Add(this.pic3);
@@ -108,6 +108,9 @@
             this.Controls.Add(this.pic1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic3)).EndInit();
@@ -123,7 +126,7 @@
         private System.Windows.Forms.PictureBox pic3;
         private System.Windows.Forms.PictureBox pic4;
         private System.Windows.Forms.Button btn;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox tbPlate;
     }
 }
 
