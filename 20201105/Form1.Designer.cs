@@ -33,7 +33,7 @@
             this.pic3 = new System.Windows.Forms.PictureBox();
             this.pic4 = new System.Windows.Forms.PictureBox();
             this.btn = new System.Windows.Forms.Button();
-            this.tbPlate = new System.Windows.Forms.RichTextBox();
+            this.tbPlate = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic3)).BeginInit();
@@ -89,11 +89,10 @@
             // 
             // tbPlate
             // 
-            this.tbPlate.Location = new System.Drawing.Point(61, 66);
+            this.tbPlate.Location = new System.Drawing.Point(83, 76);
             this.tbPlate.Name = "tbPlate";
-            this.tbPlate.Size = new System.Drawing.Size(200, 96);
+            this.tbPlate.Size = new System.Drawing.Size(100, 22);
             this.tbPlate.TabIndex = 5;
-            this.tbPlate.Text = "";
             // 
             // Form1
             // 
@@ -116,6 +115,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -126,7 +126,7 @@
         private System.Windows.Forms.PictureBox pic3;
         private System.Windows.Forms.PictureBox pic4;
         private System.Windows.Forms.Button btn;
-        private System.Windows.Forms.RichTextBox tbPlate;
+        private System.Windows.Forms.TextBox tbPlate;
     }
 }
 

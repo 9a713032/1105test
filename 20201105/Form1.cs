@@ -17,8 +17,6 @@ namespace _20201105
             InitializeComponent();
         }
         #region 生命週期
-       
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -26,7 +24,7 @@ namespace _20201105
 
         private void Form1_Shown(object sender, EventArgs e)
         {
-
+            this.Location = new Point(200, 100);
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -44,6 +42,10 @@ namespace _20201105
         private void btn_Click(object sender, EventArgs e)
         {
             //檢查輸入情況
+
+            //送資料給API
+
+            //根據結果顯示圖片
             
             if(string.IsNullOrEmpty(tbPlate.Text))
             {
